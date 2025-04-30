@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LERATO MOCHESANE</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #3498db;
+            --light: #ecf0f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid var(--accent);
+        }
+
+        nav {
+            background-color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: var(--secondary);
+            text-decoration: none;
+            margin: 0 1.5rem;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .about-content {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            margin-top: 2rem;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin: 0;
+            flex-shrink: 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 0;
+            list-style: none;
+        }
+
+        .skills-item {
+            background: var(--light);
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        .contact-info {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        form {
+            display: grid;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        button {
+            background: var(--accent);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                margin: 0 0.5rem;
+                padding: 0.5rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .profile-image {
+                margin-top: -50px;
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>LERATO MOCHESANE</h1>
+    <p>Journalist | Media Personnel | Youth Advocate | Copywriter | Change Maker</p>
+</header>
+
+<nav>
+    <div class="container">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+
+<div class="container">
+    <section id="about" class="card">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <img src="p.jpg" alt="LERATO MOCHESANE" class="profile-image">
+            <div class="about-text">
+                <h3>Professional Background</h3>
+                <p>Lesotho-born journalist and media professional with a focus on storytelling and youth empowerment. Holder of an Associate Degree in Journalism and Media from Limkokwing University. Former senior journalist at The Mail Newspaper with experience across multiple media outlets including BAM Media and Ultimate Radio.</p>
+
+                <h3>Youth Advocacy & AfCFTA</h3>
+                <p>Lesotho Country Champion for the Independent Continental Youth Advisory Council on AfCFTA, advocating for youth inclusion and information dissemination about the continental trade agreement.</p>
+
+                <h3>Leadership & Development</h3>
+                <p>Alumna of YALI-RCL, Future Africa, and Usawa programs. Passionate about creating entrepreneurial resources and mentorship opportunities for young Africans.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="card">
+        <h2 class="section-title">Hobbies</h2>
+        <ul>
+            <li>📚 Reading blogs & industry publications</li>
+            <li>📰 Following current affairs</li>
+            <li>✈️ Exploring new destinations</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="card">
+        <h2 class="section-title">Projects</h2>
+        <h3>AfCFTA Youth Sensitization</h3>
+        <p>Led nationwide educational workshops across all 10 districts of Lesotho to increase youth awareness and participation in the African Continental Free Trade Area.</p>
+    </section>
+
+    <section id="skills" class="card">
+        <h2 class="section-title">Skills</h2>
+        <ul class="skills-list">
+            <li class="skills-item">Public Speaking & Presentation</li>
+            <li class="skills-item">Strategic Communication</li>
+            <li class="skills-item">Partnership Building</li>
+            <li class="skills-item">Program Development</li>
+            <li class="skills-item">Conflict Resolution</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="card">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-info">
+            <p>📧 <a href="mailto:mochesaneleratolydia@gmail.com">mochesaneleratolydia@gmail.com</a></p>
+            <p>📱 +266 63810239 / 57512800</p>
+            <p>💼 <a href="https://www.linkedin.com/in/lerato-mochesane-51805b127">LinkedIn Profile</a></p>
+        </div>
+
+        <form action="#" method="POST">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Subject">
+            <textarea rows="5" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Lerato Mochesane. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
